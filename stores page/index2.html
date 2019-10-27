@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW2</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="allContent">
+    <section class="storeColumn">
+        <ul class="mainList" id="mainList">
+            <li class="storeElems searchElem">
+                <div class="head storeHeadQuality">
+                    <h1>Stores list</h1>
+                    <input type="text" id="searchInput" placeholder="Search">
+                    <i class="far fa-times-circle trashElem" id="crossIcon"></i>
+                    <i class="fas fa-search" id="searchIcon"></i>
+                    <i class="fas fa-sync-alt" id="reverseIcon"></i>
+                    <button class="collapsingButton storeBut"><i class="fas fa-angle-up"></i></button>
+                    <button class="collapsingButton storeBut"><i class="fas fa-thumbtack"></i></button>
+                </div>
+            </li>
+        </ul>
+        <footer class="storeFooter">
+            <button class="addElemBut"><i class="fas fa-plus"></i> Create</button>
+        </footer>
+    </section>
+    <section class="productsColumn" id="productsColumn">
+        <div class="head productHeadQuality" id="productHead">
+            <h1 class="prodChanges">Store is not selected</h1>
+        </div>
+        <footer class="prodFooter hide" id="prodFooter"></footer>
+        <table cellspacing="0" class="productsInf" id="productsTable"></table>
+        <i class="fas fa-store trash" id="shopIcon"></i>
+        <p class="storeWarning" id="storeWarning">The store is not selected</p>
+        <p class="prodChanges" id="storeSelection"><span>Please select the store to proceed</span></p>
+    </section>
+</section>
+<script src="https://kit.fontawesome.com/acdca40c04.js"></script>
+<script src="js/data.js"></script>
+<script src="js/createPage.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
